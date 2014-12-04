@@ -1,0 +1,116 @@
+package chatClient;
+
+import chatServer.ChatServiceRemoteInterface;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.swing.AbstractButton;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+import screens.StartScreen;
+
+/**
+ *
+ * @author bartspiering
+ */
+public class ChatClient2{
+    private static Object frame;
+ 
+    ChatServiceRemoteInterface remoteService;
+    final JTextArea history = new JTextArea(10, 20);
+    String USERNAME = null;
+	public void connect() {
+		USERNAME = JOptionPane.showInputDialog(frame, "Please Enter Your Name") + " : ";
+    	try {	
+            remoteService = (ChatServiceRemoteInterface)
+                      Naming.lookup("rmi://127.0.0.1/ChatService");
+            
+            String test = remoteService.sendMessage(USERNAME);
+            System.out.println("Chat Client has Started \n Enter: ");
+            
+            initializeGUI();
+            
+            String lastMessageFromServer = "";
+            while(true) {
+            	String newMessage = remoteService.getMessage();
+            	if(lastMessageFromServer.equals(newMessage)) {
+            		try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+            	} else {
+            		lastMessageFromServer = newMessage;
+            		history.setText(history.getText() + System.lineSeparator() + lastMessageFromServer );
+            	}
+            }
+            
+        } catch (NotBoundException ex) {
+            Logger.getLogger(ChatClient2.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(ChatClient2.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (RemoteException ex) {
+            Logger.getLogger(ChatClient2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+	public void initializeGUI() {
+		JFrame gui = new JFrame();
+		JPanel panel = new JPanel();
+		final JTextField messageField = new JTextField(20);
+		panel.add(messageField);
+				
+		JButton sendButton = new JButton("Send Message");
+		panel.add(sendButton);
+		
+		
+		panel.add(history);
+		
+		sendButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+               sendMessage(messageField);
+            }
+                     
+        });   
+		messageField.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+               sendMessage(messageField);
+            }
+                     
+        });   
+		gui.setName("Chat Client");
+		gui.setSize(600, 400);
+		gui.getContentPane().add(panel);
+		gui.setVisible(true);
+		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public void sendMessage(JTextField messageField) {
+		 //Execute when button is pressed
+        String message = messageField.getText();
+        messageField.setText("");
+    	
+        try {
+			remoteService.sendMessage(USERNAME + message);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+	}
+    public static void main(String[] args) {
+        ChatClient2 chatClient = new ChatClient2();
+        chatClient.connect();
+    }
+}

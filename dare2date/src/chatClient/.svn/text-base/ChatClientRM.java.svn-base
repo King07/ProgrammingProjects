@@ -1,0 +1,31 @@
+package chatClient;
+
+import java.rmi.RemoteException;
+
+import chatServer.StartChatServiceRemote;
+
+public class ChatClientRM implements Runnable{
+	
+	public ChatClientRM(){
+		
+	}
+	
+	public void run() {
+		try {
+			String message = " ";
+			while(true){
+				if (! ( StartChatServiceRemote.service.getMessage() == null )){
+					if ( StartChatServiceRemote.service.getMessage().compareTo(message) != 0 ){
+						message = StartChatServiceRemote.service.getMessage();
+					}
+				}
+				
+			}
+			
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

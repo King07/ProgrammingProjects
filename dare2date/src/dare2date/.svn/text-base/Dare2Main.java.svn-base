@@ -1,0 +1,215 @@
+package dare2date;
+
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import profile.Member;
+import profile.NonMember;
+
+public class Dare2Main
+{
+	public static String username;
+	public static String password;
+	public static Scanner in = new Scanner(System.in);
+	static Member member;
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("Wellcome To DARE2DATE");
+		System.out.println("Enter op1tions \n1: Sign in");
+		System.out.println("2: Sign up \n3: Forget Password");
+		username = new String();
+		password =  new String();
+
+		String choice = in.nextLine();
+
+		if(choice.startsWith("1"))
+		{
+			System.out.println("Enter username: ");
+			username = in.nextLine();
+			System.out.println("Enter password: ");
+			password = in.nextLine();	
+
+			member = new Member(username,password);
+			boolean paid = member.isPaid();
+			member.payment(paid);
+			menu();
+		}
+
+		else if (choice.startsWith("2")){ // Option Sign Up
+
+			System.out.println("Enter your email address: ");
+			username = in.nextLine();
+			System.out.println(username);
+
+			boolean passwordIsSet = false;
+
+			do{
+				System.out.println("Enter your password: ");
+				password = in.nextLine();
+				System.out.println(password);
+				System.out.println("Re-Enter your password: ");
+				if(password.compareTo(in.nextLine()) == 0){
+					System.out.println("Password was Entered Correctly");
+					passwordIsSet = true;
+				}else{
+					System.out.println("Passwords do not match");
+				}
+			}
+			while(!passwordIsSet);
+
+			NonMember nonMember = new NonMember(username, password);
+
+			nonMember.signUp();
+
+
+			// **** Think that needs to be done after the user logs in ****
+			//System.out.println("Enter your First Name: ");
+			//nonMember.setFirstName(in.nextLine());
+			//System.out.println("Enter your Last Name: ");
+			//nonMember.setLastName(in.nextLine());
+
+		}
+
+	}
+	
+	public static void menu()
+	{
+
+
+		try {
+			if(member.logIn())
+			{
+				System.out.println("\nWelcome "+ username);
+				System.out.println("Select \n1: To fill in advanced information "
+						+ "\n2: To show profile"
+						+ "\n3: Search for users"
+						+ "\n4: Messages"
+						+ "\n5: Log off "
+						+ "\n6  Show Matches");
+
+
+				in.reset();
+				int choose = in.nextInt();
+
+				//1: To fill in advanced information
+				if(choose==1)
+				{
+					member.fillAdvanceUserData();
+					menu();
+				}
+
+				//2: To show profile
+				else if(choose==2)
+				{
+					//FIND FILE
+					BufferedReader br = new BufferedReader(new FileReader(username + ".txt"));
+					String line = null;
+					//SHOW PROFILE
+					int i=0;
+					while ((line = br.readLine()) != null) 
+					{
+
+						System.out.println(line);
+					}
+					menu();
+				}
+
+				//3: Search for users
+				else if(choose==3)
+				{
+					search();
+					//GO BACK TO MENU ;)
+					menu();
+				}
+
+				//4: Inbox
+				else if(choose==4)
+				{
+					member.messages();
+				}
+
+				//5: Log off
+				else if(choose==5)
+				{
+					
+				}
+
+				//6  Show Matches
+				else if(choose==6)
+				{
+
+				}
+
+
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static ArrayList search() throws IOException
+	{
+		//SEARCHING
+		String scanEnter = in.nextLine();
+		System.out.print("Enter the name of searched person: ");
+		String searchedName = in.nextLine();
+		System.out.println("People found: ");
+
+		//SEPERATE WORDS BY SPACE (" ")
+		String[] searchedNamesS = searchedName.split(" ");
+		ArrayList<String> searchedNames = new ArrayList<String>();
+
+		for(int i=0;i<searchedNamesS.length;i++)
+		{
+			searchedNames.add(searchedNamesS[i]);
+		}
+
+		//GET CURRENT DIRECTORY
+		String myCurrentDir = System.getProperty("user.dir");
+
+		ArrayList<String> results = new ArrayList<String>();
+		File[] files = new File(myCurrentDir).listFiles();
+
+		//ADDING FILE NAMES(USERS) TO AN ARRAY
+		for (File file : files) {
+			if (file.isFile()&&file.getName().contains(".txt")) {
+				results.add(file.getName());
+			}
+		}
+
+		//SEARCHING THROUGH THE USERS IF THEY CONTAIN SEARCHED KEY WORDS....
+		for(int i=0; i<results.size(); i++)
+		{
+			BufferedReader br = new BufferedReader(new FileReader(results.get(i)));
+			String line = null;
+			String check = null;
+
+			while ((line = br.readLine()) != null) 
+			{
+				for(int z = 0; z<searchedNames.size();z++)
+				{
+					//INCLUDED CASE OF ENTRY IN LOWER OR UPPER CASE TOO...
+					if(((line.contains(searchedNames.get(z))||(line.contains(searchedNames.get(z).toLowerCase()))||(line.contains(searchedNames.get(z).toUpperCase())))&&(results.get(i)!=check)))
+					{
+						//PRINTING USER NAMES
+						System.out.println(results.get(i));
+						check = results.get(i);
+					}
+				}								
+			}
+		}	
+		
+		return results;
+	}
+
+}
+
+

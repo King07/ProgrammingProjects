@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :0:0:x, par l {comp label_Icon:::p:700:p, comp label1:::p:700:p, seq {comp panel_Screen:::p:164:p, par l {seq {space :p:351:p, comp button_SendMessage:::p:84:p}, seq l {space u:::p, par l {seq t {space :p:3:p, comp scrollPane1:::p:418:p}, par l:l::p {comp textField_subject:::::x, comp textField_receiver:::p:260:p}}}}}}}, seq l {space :p:301:p, comp button_signIn:::p::p, space :::x}}"
+			"$verticalGroup": "par l {seq {comp label_Icon:::p::p, space :p:2:p, comp label1:::p::p, space :p::p, par l {seq {space :p:9:p, comp textField_receiver:::p::p, space :p::p, comp textField_subject:::p::p, space :p::p, comp scrollPane1:::p:174:p, space u:p::p, comp button_SendMessage:::p::p, space :p:47:p, comp button_signIn:::p::p}, comp panel_Screen::l:p:319:p}, space ::17:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "New Message"
+				"font": new java.awt.Font( "Lucida Grande", 0, 28 )
+				"horizontalTextPosition": 0
+				"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Icon"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/dare2date_logo.png" )
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+				name: "panel_Screen"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_showProfile2"
+					"text": "Profile"
+					"background": &Color0 new java.awt.Color( 204, 0, 0, 255 )
+					"actionCommand": "Profile"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Inbox2"
+					"text": "Inbox"
+					"background": #Color0
+					"actionCommand": "Inbox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_InboxActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_InboxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Search2"
+					"text": "Search"
+					"background": #Color0
+					"actionCommand": "Search"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Matches2"
+					"text": "Matches"
+					"background": #Color0
+					"actionCommand": "Matches"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_MatchesActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_MatchesActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Chat2"
+					"text": "Chat"
+					"background": #Color0
+					"actionCommand": "Chat"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_adv_userInfo2"
+					"text": "My Details"
+					"background": #Color0
+					"actionCommand": "Profile"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_adv_userInfoActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_adv_userInfoActionPerformed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_signIn"
+				"text": "Sign Out"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_signInActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_receiver"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_subject"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea_messageText"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_SendMessage"
+				"text": "Send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SendMessageActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 700, 500 )
+		} )
+	}
+}

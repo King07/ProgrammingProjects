@@ -1,0 +1,111 @@
+/*
+ * Created by JFormDesigner on Wed Apr 02 21:11:12 CEST 2014
+ */
+
+package screens;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle;
+
+/**
+ * @author don gourdet
+ */
+public class ProfileScreen1 extends JPanel {
+	public ProfileScreen1() {
+		initComponents();
+	}
+
+	private void button_signInActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_SaveChangesActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_showProfileActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_InboxActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_SearchActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_adv_userInfoActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_ChatActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_MatchesActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void initComponents() {
+		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+		// Generated using JFormDesigner Evaluation license - don gourdet
+		label_profilePic2 = new JLabel();
+		scrollPane3 = new JScrollPane();
+		textArea_profileInfo2 = new JTextArea();
+
+		//======== this ========
+		setPreferredSize(new Dimension(700, 500));
+
+		// JFormDesigner evaluation mark
+		setBorder(new javax.swing.border.CompoundBorder(
+			new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+				"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+				javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+				java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+
+		//---- label_profilePic2 ----
+		label_profilePic2.setIcon(new ImageIcon(getClass().getResource("/resources/default_profilepic1.jpg")));
+		label_profilePic2.setText("First Last Name");
+
+		//======== scrollPane3 ========
+		{
+
+			//---- textArea_profileInfo2 ----
+			textArea_profileInfo2.setEditable(false);
+			textArea_profileInfo2.setBackground(SystemColor.window);
+			scrollPane3.setViewportView(textArea_profileInfo2);
+		}
+
+		GroupLayout layout = new GroupLayout(this);
+		setLayout(layout);
+		layout.setHorizontalGroup(
+			layout.createParallelGroup()
+				.addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+					.addGap(0, 201, Short.MAX_VALUE)
+					.addGroup(layout.createParallelGroup()
+						.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, 499, GroupLayout.PREFERRED_SIZE)
+						.addComponent(label_profilePic2)))
+		);
+		layout.setVerticalGroup(
+			layout.createParallelGroup()
+				.addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+					.addGap(0, 104, Short.MAX_VALUE)
+					.addComponent(label_profilePic2)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, 325, GroupLayout.PREFERRED_SIZE))
+		);
+		// JFormDesigner - End of component initialization  //GEN-END:initComponents
+	}
+
+	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	// Generated using JFormDesigner Evaluation license - don gourdet
+	private JLabel label_profilePic2;
+	private JScrollPane scrollPane3;
+	private JTextArea textArea_profileInfo2;
+	// JFormDesigner - End of variables declaration  //GEN-END:variables
+}

@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/background_travel"
+    tools:context="com.example.political.NewPoliticalFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+  
+             
+  <EditText 
+      android:id="@+id/newPartyName"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+     android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:hint="Enter Name"
+      android:layout_marginBottom="10dip"/>  
+    
+  <EditText 
+      android:id="@+id/newPartyDescription"
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:hint="Enter Description"
+      android:layout_marginBottom="10dip"/>    
+<TextView 
+      android:id="@+id/logo_icons"
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:text="Select a logo"
+       android:layout_marginBottom="10dip"
+     />
+      <TableLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+          android:layout_gravity="center"
+         >
+          <TableRow
+               android:layout_width="match_parent"
+         		 android:layout_height="wrap_content" >
+
+              <ImageButton
+                  android:id="@+id/cda"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5px"
+                  android:background="@null"
+                  android:src="@drawable/cda" />
+
+           <ImageButton
+               android:id="@+id/cu"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:background="#ffffff"
+               android:src="@drawable/cu" />
+           <ImageButton
+               android:id="@+id/d66"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:background="#ffffff"
+               android:src="@drawable/d66" />
+            <ImageButton
+               android:id="@+id/gl"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:background="#ffffff"
+               android:src="@drawable/gl" />
+             <ImageButton
+               android:id="@+id/politiek"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/politiek" />
+              <ImageButton
+               android:id="@+id/pvda"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/pvda" />
+              
+          </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:baselineAligned="true" >
+
+              <ImageButton
+               android:id="@+id/pvdd"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/pvdd" />
+              <ImageButton
+               android:id="@+id/pvv"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/pvv" />
+              <ImageButton
+               android:id="@+id/sgp"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/sgp" />
+              <ImageButton
+               android:id="@+id/sp"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/sp" />
+              <ImageButton
+               android:id="@+id/vijftigplus"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/vijftigplus" />
+              <ImageButton
+               android:id="@+id/vvd"
+               android:layout_margin="5px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#ffffff"
+               android:src="@drawable/vvd" />
+ </TableRow>
+      </TableLayout>         
+   
+  <Button 
+      android:id="@+id/AddNewParty"
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:layout_marginTop="10px"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:text="SAVE"/>
+
+</LinearLayout>

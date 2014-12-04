@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_textStatisc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:minHeight="180dp"
+        android:minWidth="180dp"
+        android:src="@drawable/pvdd" />
+
+    <TextView
+        android:id="@+id/item_textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/item_icon"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/item_textStatisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_textName"
+        android:layout_below="@+id/item_textName"
+        android:text="Statistic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20dp" />
+
+</RelativeLayout>

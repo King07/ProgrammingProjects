@@ -1,0 +1,177 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+	overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+	padding-top: 70px;
+}
+footer {
+	padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all 0.25s ease-out;
+		-moz-transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out;
+	}
+
+	.row-offcanvas-right
+  .sidebar-offcanvas {
+		right: -50%; /* 6 columns */
+	}
+
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -50%; /* 6 columns */
+	}
+
+	.row-offcanvas-right.active {
+		right: 50%; /* 6 columns */
+	}
+
+	.row-offcanvas-left.active {
+		left: 50%; /* 6 columns */
+	}
+
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%; /* 6 columns */
+	}
+}
+
+.home-pic{
+
+	background: url(/tourists-information-application/app/images/I-amsterdam.jpg);
+	background-size:contain;
+	width: 800px;
+	height: 327px;
+	color: white;
+
+}
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 999px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background: red;
+	cursor: inherit;
+	display: block;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#flash_notice{
+	background: url(/tourists-information-application/app/images/Blank.png);
+	background-size:contain;
+	width: 800px;
+	height: 50px;
+}
+#flash_notice_admin{
+	background: url(/tourists-information-application/app/images/Blank.png);
+	background-size:contain;
+	width: 500px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}#result{
+	background: url(/tourists-information-application/app/images/Blank.png);
+	background-size:contain;
+	width: 500px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.link a:link{
+	color: #428ac9;
+
+}
+#cat_add{
+	margin-left: 40px;
+
+}
+.link a:visited{
+	color: #222222;
+}
+
+.rating {
+	overflow: hidden;
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+}
+.rating-input {
+	position: absolute;
+	left: 0;
+	left: -10000px;
+}
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+	background-position: 0 0;
+}
+.rating-star,
+.rating:hover .rating-star {
+	float: right;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.button{
+	float: right;
+}
+
+

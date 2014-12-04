@@ -1,0 +1,272 @@
+/*
+ * Created by JFormDesigner on Wed Apr 02 21:00:18 CEST 2014
+ */
+
+package screens;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import dare2date.Main1;
+
+/**
+ * @author don gourdet
+ */
+public class Template1 extends JPanel {
+	public Template1() {
+		initComponents();
+	}
+
+	private void button_signInActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_SaveChangesActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_showProfileActionPerformed(ActionEvent e) {
+		// TODO add your code here
+		
+		this.label1.setText("Profile Screen");
+		this.revalidate();
+		
+		
+		panel_Screen.removeAll();
+		int numcomp = new ProfileScreen1().getComponentCount();
+		for (int i = 0; i< numcomp;i++){
+			panel_Screen.add(new ProfileScreen1().getComponent(i));
+		}
+		
+		Main1.gui.remove(panel_Screen);
+		panel_Screen.add(label1);
+		Main1.gui.add(panel_Screen);;
+		Main1.gui.revalidate();
+		Main1.gui.repaint();
+		Main1.gui.setVisible(true);
+	
+	}
+
+	private void button_InboxActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_SearchActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_adv_userInfoActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_ChatActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_MatchesActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void button_signOutActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void initComponents() {
+		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+		// Generated using JFormDesigner Evaluation license - don gourdet
+		label_Icon = new JLabel();
+		label1 = new JLabel();
+		panel_Screen = new JPanel();
+		button_showProfile = new JButton();
+		button_Inbox = new JButton();
+		button_Search = new JButton();
+		button_Matches = new JButton();
+		button_Chat = new JButton();
+		button_adv_userInfo = new JButton();
+		button_signOut = new JButton();
+
+		//======== this ========
+		setPreferredSize(new Dimension(700, 500));
+
+		// JFormDesigner evaluation mark
+		setBorder(new javax.swing.border.CompoundBorder(
+			new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+				"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+				javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+				java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+
+		//---- label_Icon ----
+		label_Icon.setIcon(new ImageIcon(getClass().getResource("/resources/dare2date_logo.png")));
+		label_Icon.setHorizontalAlignment(SwingConstants.CENTER);
+
+		//---- label1 ----
+		label1.setText("Template");
+		label1.setFont(new Font("Lucida Grande", Font.PLAIN, 28));
+		label1.setHorizontalTextPosition(SwingConstants.CENTER);
+		label1.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+		label1.setHorizontalAlignment(SwingConstants.CENTER);
+
+		//======== panel_Screen ========
+		{
+
+			//---- button_showProfile ----
+			button_showProfile.setText("Profile");
+			button_showProfile.setBackground(new Color(204, 0, 0));
+			button_showProfile.setActionCommand("Profile");
+			button_showProfile.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_showProfileActionPerformed(e);
+					button_showProfileActionPerformed(e);
+				}
+			});
+
+			//---- button_Inbox ----
+			button_Inbox.setText("Inbox");
+			button_Inbox.setBackground(new Color(204, 0, 0));
+			button_Inbox.setActionCommand("Inbox");
+			button_Inbox.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_InboxActionPerformed(e);
+				}
+			});
+
+			//---- button_Search ----
+			button_Search.setText("Search");
+			button_Search.setBackground(new Color(204, 0, 0));
+			button_Search.setActionCommand("Search");
+			button_Search.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_SearchActionPerformed(e);
+				}
+			});
+
+			//---- button_Matches ----
+			button_Matches.setText("Matches");
+			button_Matches.setBackground(new Color(204, 0, 0));
+			button_Matches.setActionCommand("Matches");
+			button_Matches.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_MatchesActionPerformed(e);
+				}
+			});
+
+			//---- button_Chat ----
+			button_Chat.setText("Chat");
+			button_Chat.setBackground(new Color(204, 0, 0));
+			button_Chat.setActionCommand("Chat");
+			button_Chat.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_ChatActionPerformed(e);
+				}
+			});
+
+			//---- button_adv_userInfo ----
+			button_adv_userInfo.setText("My Details");
+			button_adv_userInfo.setBackground(new Color(204, 0, 0));
+			button_adv_userInfo.setActionCommand("Profile");
+			button_adv_userInfo.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					button_adv_userInfoActionPerformed(e);
+				}
+			});
+
+			GroupLayout panel_ScreenLayout = new GroupLayout(panel_Screen);
+			panel_Screen.setLayout(panel_ScreenLayout);
+			panel_ScreenLayout.setHorizontalGroup(
+				panel_ScreenLayout.createParallelGroup()
+					.addGroup(panel_ScreenLayout.createSequentialGroup()
+						.addContainerGap()
+						.addGroup(panel_ScreenLayout.createParallelGroup()
+							.addGroup(panel_ScreenLayout.createSequentialGroup()
+								.addGap(0, 0, Short.MAX_VALUE)
+								.addComponent(button_showProfile, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE))
+							.addGroup(panel_ScreenLayout.createSequentialGroup()
+								.addGroup(panel_ScreenLayout.createParallelGroup()
+									.addComponent(button_Inbox, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+									.addComponent(button_Search, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+									.addComponent(button_Matches, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+									.addComponent(button_Chat, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE)
+									.addComponent(button_adv_userInfo, GroupLayout.PREFERRED_SIZE, 105, GroupLayout.PREFERRED_SIZE))
+								.addGap(0, 0, Short.MAX_VALUE))))
+			);
+			panel_ScreenLayout.setVerticalGroup(
+				panel_ScreenLayout.createParallelGroup()
+					.addGroup(panel_ScreenLayout.createSequentialGroup()
+						.addComponent(button_showProfile, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addComponent(button_Inbox, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addComponent(button_Search, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addComponent(button_Matches, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addComponent(button_Chat, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addComponent(button_adv_userInfo, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
+						.addGap(0, 148, Short.MAX_VALUE))
+			);
+		}
+
+		//---- button_signOut ----
+		button_signOut.setText("Sign Out");
+		button_signOut.setActionCommand("Sign Out");
+		button_signOut.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				button_signInActionPerformed(e);
+				button_signOutActionPerformed(e);
+			}
+		});
+
+		GroupLayout layout = new GroupLayout(this);
+		setLayout(layout);
+		layout.setHorizontalGroup(
+			layout.createParallelGroup()
+				.addComponent(label_Icon, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+				.addComponent(label1, GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+				.addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+					.addComponent(panel_Screen, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 200, Short.MAX_VALUE)
+					.addComponent(button_signOut)
+					.addGap(280, 280, 280))
+		);
+		layout.setVerticalGroup(
+			layout.createParallelGroup()
+				.addGroup(layout.createSequentialGroup()
+					.addGap(8, 8, 8)
+					.addComponent(label_Icon)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(label1)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addGroup(layout.createParallelGroup()
+						.addGroup(layout.createSequentialGroup()
+							.addGap(0, 343, Short.MAX_VALUE)
+							.addComponent(button_signOut))
+						.addComponent(panel_Screen, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+		);
+		// JFormDesigner - End of component initialization  //GEN-END:initComponents
+	}
+
+	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	// Generated using JFormDesigner Evaluation license - don gourdet
+	private JLabel label_Icon;
+	private JLabel label1;
+	private JPanel panel_Screen;
+	private JButton button_showProfile;
+	private JButton button_Inbox;
+	private JButton button_Search;
+	private JButton button_Matches;
+	private JButton button_Chat;
+	private JButton button_adv_userInfo;
+	private JButton button_signOut;
+	// JFormDesigner - End of variables declaration  //GEN-END:variables
+}

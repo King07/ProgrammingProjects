@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp label_Icon::t::700:x, seq {par l {seq l {space :p:299:p, comp button_signIn:::p::p}, seq {space :::p, par l {comp label_FirstName:::p::p, comp textField_FirstName::l:p:216:p, comp label_LastName:::p::p, comp textField_LastName:::p:216:p}}}, space :0:309:x}, seq l {space :::p, par l {comp label_Email::l:p::p, comp textField_Email::l:p:216:p, comp label_ConfirmPassword::l:p::p, comp label_CreatePassword::l:p::p, comp passwordField_userPassword1::l:p:216:p, comp passwordField_userPassword2::l:p:216:p}, space ::464:x}}"
+			"$verticalGroup": "par l {seq {comp label_Icon:::p:87:p, space :p:51:p, comp label_FirstName:::p::p, space :::p, comp textField_FirstName:::p::p, space :::p, comp label_LastName:::p::p, space :::p, comp textField_LastName:::p::p, space :::p, comp label_Email:::p::p, space :::p, comp textField_Email:::p::p, space :::p, comp label_CreatePassword:::p::p, space :::p, comp passwordField_userPassword1:::p::p, space :::p, comp label_ConfirmPassword:::p::p, space :::p, comp passwordField_userPassword2:::p::p, space ::23:x, comp button_signIn:::p::p, space :p:18:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_FirstName"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField_userPassword1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_signIn"
+				"text": "Sign Up"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_signInActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_signInActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Icon"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/dare2date_logo.png" )
+				"horizontalAlignment": 0
+				"horizontalTextPosition": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_FirstName"
+				"text": "Frist Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_LastName"
+				"text": "Last Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_LastName"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Email"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField_userPassword2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_CreatePassword"
+				"text": "Create password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_ConfirmPassword"
+				"text": "Confirm password"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 700, 500 )
+		} )
+	}
+}

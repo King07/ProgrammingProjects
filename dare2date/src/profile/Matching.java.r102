@@ -1,0 +1,591 @@
+package profile;
+
+import java.util.Date;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+import profile.Member;
+
+public class Matching 
+{
+	static Member matchPerson = new Member();
+
+	public Matching(){
+		
+	}
+	
+	
+	public void BscMatching(String basicmatch){
+		
+		blindMatch(basicmatch);
+		
+		
+	}
+	public ArrayList<String> AdvMatching(){
+		return null;
+		
+	}
+	
+	
+	public static ArrayList<String> getListOfEmails(){
+		//CHECKING FROM WHERE THE METHOD IS CALLED - boolean printing
+		//SEARCHING
+		
+		//GET CURRENT DIRECTORY
+		String myCurrentDir = System.getProperty("user.dir");
+		ArrayList<String> results = new ArrayList<String>();
+		File[] files = new File(myCurrentDir).listFiles();
+
+		//ADDING FILE NAMES(USERS) TO AN ARRAY
+		for (File file : files) {
+			if (file.isFile()&&file.getName().contains(".txt")) {
+				results.add(file.getName());
+			}
+		}
+			
+			return results;
+		}
+		
+		
+
+
+
+	public static void main(String[] args) throws IOException 
+	{
+
+		Scanner in = new Scanner(System.in);
+		String answer;
+		System.out.println("Select from below: ");
+		System.out.println("1: Blind match \n2: Advanced matching");
+		answer = in.nextLine();
+		if(answer.contains("1"))
+		{
+			System.out.println("1: Blind location match \n2: Blind age match");
+			answer = in.nextLine();
+			if(answer.contains("1"))
+			{
+				System.out.println("Enter location: ");
+				String location = in.nextLine();
+				blindMatch(location);
+			}
+			else if(answer.contains("2"))
+			{
+				System.out.println("Enter age: ");
+				String age = in.nextLine();
+				blindMatch(age);
+			}
+		}
+		else if(answer.contains("2"))
+		{
+			System.out.println("1: 3-5 criteria match \n2: Full match");
+			answer = in.nextLine();
+			if(answer.contains("1"))
+			{
+				/*
+
+				 * DateOfBirth
+				 * Gender
+				 * City
+				 * Preferences
+				 * Hobbies
+
+				 */
+				Scanner in2 = new Scanner(System.in);
+				System.out.println("Enter criteria(end with -1): ");
+				//ArrayList<String> criteria35 = new ArrayList<String>();
+				String entry;
+				System.out.println("Enter age: ");
+				String age = in2.nextLine();
+				System.out.println("Enter gender(MALE, FEMALE, UKNOWN): ");	
+				String gender = in2.nextLine();
+				System.out.println("Enter city: ");
+				String city = in2.nextLine();
+				System.out.println("Enter partner preferences(end with -1): ");
+
+				String i="0";
+				int y=1;
+				ArrayList<String> preferences = new ArrayList<String>();
+				while(i!="0")
+				{
+					System.out.println(y + " entry: \n");
+					String preference = in2.nextLine();
+					i=preference;
+					if(i.contains("-1"))
+					{
+						break;
+					}
+					preferences.add(preference);
+					y++;
+				}
+
+				System.out.println("Enter hobbies(end with -1): ");
+
+				i="0";
+				y=1;
+				ArrayList<String> hobbies = new ArrayList<String>();
+				while(i.contains("0"))
+				{
+					System.out.println(y + " entry: \n");
+					String hobby = in2.nextLine();
+					i=hobby;
+					if(i=="-1")
+					{
+						break;
+					}
+					hobbies.add(hobby);
+					y++;
+				}		
+
+				advancedMatch35(age, gender, city, preferences, hobbies);				
+
+			}
+			else if(answer.contains("2"))
+			{
+				/*
+
+				 * First Name
+				 * Last Name
+				 * DateOfBirth
+				 * Gender
+				 * City
+				 * Country
+				 * PhoneNumber
+				 * Preferences
+				 * Hobbies
+
+				 */
+				System.out.println("Enter all criteria: ");
+				ArrayList<String> criteriaAll = new ArrayList<String>();
+
+				Scanner in2 = new Scanner(System.in);
+				System.out.println("Enter criteria(end with -1): ");
+				//ArrayList<String> criteria35 = new ArrayList<String>();
+
+				System.out.println("Enter first name: ");
+				String fName = in2.nextLine();
+				System.out.println("Enter last name: ");
+				String lName = in2.nextLine();
+				System.out.println("Enter age: ");
+				String age = in2.nextLine();
+				System.out.println("Enter gender(MALE, FEMALE, UKNOWN): ");	
+				String gender = in2.nextLine();
+				System.out.println("Enter city: ");
+				String city = in2.nextLine();
+				System.out.println("Enter country: ");
+				String country = in2.nextLine();
+				System.out.println("Enter phone number");
+				String phoneNumber = in2.nextLine();
+				System.out.println("Enter partner preferences(end with -1): ");
+
+				String i="0";
+				int y=1;
+				ArrayList<String> preferences = new ArrayList<String>();
+				while(i!="0")
+				{
+					System.out.println(y + " entry: \n");
+					String preference = in2.nextLine();
+					i=preference;
+					if(i.contains("-1"))
+					{
+						break;
+					}
+					preferences.add(preference);
+					y++;
+				}
+
+				System.out.println("Enter hobbies(end with -1): ");
+
+				i="0";
+				y=1;
+				ArrayList<String> hobbies = new ArrayList<String>();
+				while(i.contains("0"))
+				{
+					System.out.println(y + " entry: \n");
+					String hobby = in2.nextLine();
+					i=hobby;
+					if(i=="-1")
+					{
+						break;
+					}
+					hobbies.add(hobby);
+					y++;
+				}	
+
+				fullMatch(fName, lName, age, gender, city, country, phoneNumber, preferences, hobbies);
+			}
+		}
+	}
+
+	public static ArrayList<String> blindMatch(String entry)
+	{
+		//WEIRD WORKING WAY TO CHECK IF IT CONTAINS A NUMBER... which works
+		ArrayList<String> results = new ArrayList<String>();
+		if(entry.matches(".*\\d.*"))
+		{
+			//age
+			//matchPerson.getDOB();
+
+			/*String age = "1988-05-02";
+			Date date = java.sql.Date.valueOf(age);
+
+			Date currentDate = new Date();	
+			String txtDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDate);
+
+			Calendar dob = Calendar.getInstance();  
+			dob.setTime(date);
+			Calendar today = Calendar.getInstance();
+			int age2 = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+			if (today.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR))  
+				age2--;  
+			 */
+
+			//age
+			ArrayList<String> searchedPeople = new ArrayList<String>();
+			
+			searchedPeople = getListOfEmails();
+
+			for(int i=0; i<searchedPeople.size(); i++)
+			{
+				int y = 0;
+				BufferedReader br;
+				try {
+					br = new BufferedReader(new FileReader(searchedPeople.get(i)));
+					String line = null;
+					while (((line = br.readLine()) != null)) 
+					{
+						//check line 9 for age
+						if(y==8)
+						{
+							String DOB = line;
+							Date date = java.sql.Date.valueOf(DOB);						
+
+							Date currentDate = new Date();	
+							String txtDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDate);
+
+							Calendar dob = Calendar.getInstance();  
+							dob.setTime(date);
+							Calendar today = Calendar.getInstance();
+							int age2 = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+							if (today.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR))  
+								age2--;  
+
+							if(Integer.valueOf(entry)==age2)
+							{
+								System.out.println(searchedPeople.get(i));
+							}
+						}
+						y++;
+					}
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (NumberFormatException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				if(y>=15)
+				{
+					y=0;
+				}
+			}
+
+
+		}
+		else
+		{
+			//location
+			ArrayList<String> searchedPeople = new ArrayList<String>();
+			searchedPeople = getListOfEmails();
+			
+			
+			for(int i=0; i<searchedPeople.size(); i++)
+			{
+				int y = 0;
+				BufferedReader br;
+				try {
+					br = new BufferedReader(new FileReader(searchedPeople.get(i)));
+					String line = null;
+					while (((line = br.readLine()) != null)) 
+					{
+						//check line 11 for city
+						if((y==10)&&((line.contains(entry))||(line.toLowerCase().contains(entry))))
+						{
+							
+							results.add(searchedPeople.get(i));
+							System.out.println(searchedPeople.get(i));
+						}
+						y++;
+					}
+					if(y==16)
+					{
+						y=0;
+					}
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+
+		}
+		return results;
+	}
+
+	public static void advancedMatch35(String age, String gender, String city, ArrayList<String> pref, ArrayList<String> hobbies) throws IOException
+	{
+		
+		String previous = null;
+		int points = 0;
+		boolean check = false;
+		/*
+
+		 * DateOfBirth
+		 * Gender
+		 * City
+		 * Preferences
+		 * Hobbies
+
+		 */
+		ArrayList<String> searchedPeople = new ArrayList<String>();
+		searchedPeople = getListOfEmails();
+
+		for(int i=0; i<searchedPeople.size(); i++)
+		{
+			int y = 0;
+			BufferedReader br = new BufferedReader(new FileReader(searchedPeople.get(i)));
+			String line = null;
+			while (((line = br.readLine()) != null)) 
+			{
+				//check age
+				if(y==8)
+				{
+					String DOB = line;
+					Date date = java.sql.Date.valueOf(DOB);						
+
+					Date currentDate = new Date();	
+					String txtDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDate);
+
+					Calendar dob = Calendar.getInstance();  
+					dob.setTime(date);
+					Calendar today = Calendar.getInstance();
+					int age2 = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+					if (today.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR))  
+						age2--;  
+
+					if(Integer.valueOf(age)==age2)
+					{
+						points++;
+					}
+					
+				}
+				//check gender
+				if((y==9)&&((line.contains(gender))||(line.toUpperCase().contains(gender))))
+				{
+					points++;
+				}
+				//check city
+				if((y==10)&&((line.contains(city))||(line.toLowerCase().contains(city))))
+				{
+					points++;
+				}
+				//check preferences
+				if(y==13)
+				{
+					for(int z = 0; z<pref.size(); z++)
+					{
+						if(line.contains(pref.get(z)))
+						{
+							check=true;
+						}
+					}
+					if(check==true)
+					{
+						points++;
+					}
+				}
+				
+				//check hobbies
+				if(y==14)
+				{
+					for(int z = 0; z<hobbies.size(); z++)
+					{
+						if(line.contains(hobbies.get(z)))
+						{
+							check=true;
+						}
+					}
+					if(check==true)
+					{
+						points++;
+					}
+				}
+				
+				if((points>=3)&&(searchedPeople.get(i)!=previous))
+				{
+					System.out.println(searchedPeople.get(i));
+					previous = searchedPeople.get(i);
+					
+				}
+				
+				y++;
+			}
+			if(y==16)
+			{
+				y=0;
+			}
+		}
+	}
+
+	//else if(advancedType==9)
+	//{
+
+	//}
+
+	public static void fullMatch(String fName, String lName, String age, String gender, String city, String country, String phoneNumber, ArrayList<String> pref, ArrayList<String> hobbies) throws IOException
+	{
+		
+		String previous = null;
+		int points = 0;
+		boolean check = false;
+		/*
+
+		 * First Name
+		 * Last Name
+		 * DateOfBirth
+		 * Gender
+		 * City
+		 * Country
+		 * PhoneNumber
+		 * Preferences
+		 * Hobbies
+
+		 */
+		ArrayList<String> searchedPeople = new ArrayList<String>();
+		searchedPeople = getListOfEmails();
+
+		for(int i=0; i<searchedPeople.size(); i++)
+		{
+			int y = 0;
+			BufferedReader br = new BufferedReader(new FileReader(searchedPeople.get(i)));
+			String line = null;
+			while (((line = br.readLine()) != null)) 
+			{
+				//check firstName
+				if((y==4)&&(line.contains(fName))&&(line.toLowerCase().contains(fName)))
+				{
+					points++;
+				}
+				//check lastName
+				if((y==5)&&(line.contains(lName))&&(line.toLowerCase().contains(lName)))
+				{
+					points++;
+				}
+				
+				//check age
+				if(y==8)
+				{
+					String DOB = line;
+					Date date = java.sql.Date.valueOf(DOB);						
+
+					Date currentDate = new Date();	
+					String txtDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDate);
+
+					Calendar dob = Calendar.getInstance();  
+					dob.setTime(date);
+					Calendar today = Calendar.getInstance();
+					int age2 = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+					if (today.get(Calendar.DAY_OF_YEAR) < dob.get(Calendar.DAY_OF_YEAR))  
+						age2--;  
+
+					if(Integer.valueOf(age)==age2)
+					{
+						points++;
+					}
+					
+				}
+				//check gender
+				if((y==9)&&((line.contains(gender))||(line.toUpperCase().contains(gender))))
+				{
+					points++;
+				}
+				//check city
+				if((y==10)&&((line.contains(city))||(line.toLowerCase().contains(city))))
+				{
+					points++;
+				}
+				
+				//check country
+				if((y==11)&&((line.contains(country))||(line.toLowerCase().contains(country))))
+				{
+					points++;
+				}
+				
+				//check phoneNumber
+				if((y==12)&&((line.contains(phoneNumber))))
+				{
+					points++;
+				}
+				//check preferences
+				if(y==13)
+				{
+					for(int z = 0; z<pref.size(); z++)
+					{
+						if(line.contains(pref.get(z)))
+						{
+							check=true;
+						}
+					}
+					if(check==true)
+					{
+						points++;
+					}
+				}
+				
+				//check hobbies
+				if(y==14)
+				{
+					for(int z = 0; z<hobbies.size(); z++)
+					{
+						if(line.contains(hobbies.get(z)))
+						{
+							check=true;
+						}
+					}
+					if(check==true)
+					{
+						points++;
+					}
+				}
+				
+				if((points>=9)&&(searchedPeople.get(i)!=previous))
+				{
+					System.out.println(searchedPeople.get(i));
+					previous = searchedPeople.get(i);
+					
+				}
+				
+				y++;
+			}
+			if(y==16)
+			{
+				y=0;
+			}
+		}
+	}
+
+}

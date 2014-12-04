@@ -1,0 +1,52 @@
+package chatClient;
+
+import chatServer.ChatServiceRemoteInterface;
+
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author bartspiering
+ */
+public class ChatClient{
+    public static String USERNAME = "<#%kingson %#>";
+	public void connect(){
+        
+    	
+    	try {
+        	
+            final ChatServiceRemoteInterface remoteService = (ChatServiceRemoteInterface)
+                      Naming.lookup("rmi://127.0.0.1/ChatService");
+            
+            String test = remoteService.sendMessage(USERNAME);
+            System.out.println("Chat Client has Started \n Enter: ");
+            Scanner in = new Scanner(System.in);
+            
+            System.out.println(remoteService.getMessage());
+			
+            while(true){
+            	
+            	remoteService.sendMessage(USERNAME + in.nextLine());
+            	
+            }
+            
+        } catch (NotBoundException ex) {
+            Logger.getLogger(ChatClient.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(ChatClient.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (RemoteException ex) {
+            Logger.getLogger(ChatClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public static void main(String[] args) {
+        ChatClient chatClient = new ChatClient();
+        chatClient.connect();
+    }
+}

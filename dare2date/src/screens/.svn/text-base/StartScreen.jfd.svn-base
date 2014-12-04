@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :0:0:x, comp label_Icon:::p:700:p}, seq l {space :p:191:p, par l {par l:t::p {seq l {comp label_ForgotPassword:::p::p, space :p:141:p, comp label_SignUp:::p:47:p, space ::8:p}, par l:t {comp label_Email:::p::p, comp passwordField_userPassword:::p:318:p, comp textField_userName:::p:318:p}}, seq l {space :p:114:p, comp button_signIn:::p::p, space :p:117:p}}, space :::x}}"
+			"$verticalGroup": "par l {seq {space :p:8:p, comp label_Icon:::p::p, space :p:113:p, comp textField_userName:::p::p, space :::p, comp label_Email:::p::p, space :::p, comp passwordField_userPassword:::p::p, space :::p, par b {comp label_ForgotPassword::b:p::p, comp label_SignUp::b:::x}, space s:::p, comp button_signIn:::p::p, space :p:150:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_userName"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField_userPassword"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_signIn"
+				"text": "Sign in"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_signInActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_SignUp"
+				"text": "Sign up"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label_SignUpMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Icon"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/dare2date_logo.png" )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_ForgotPassword"
+				"text": "Forgot password? :("
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Email"
+				"text": "Email"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 700, 500 )
+		} )
+	}
+}

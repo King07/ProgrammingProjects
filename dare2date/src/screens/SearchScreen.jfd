@@ -1,0 +1,112 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {comp panel_Screen:::p:164:p, space s:::p, par l {seq {comp textField_Search:::p:243:p, space :::p, comp button_SearchForLove:::p::p}, comp scrollPane2:::p:506:p}}, comp label_Icon::l:p:700:p, seq l {space :p:298:p, comp button_signOut:::p::p}, comp label1::l:p:700:p}, space :::x}}"
+			"$verticalGroup": "par l {seq {comp label_Icon:::p::p, space :p:2:p, comp label1:::p::p, space :::p, par t {seq {par b {comp textField_Search::b:p::p, comp button_SearchForLove::b:p::p}, space :::p, comp scrollPane2:::p:267:p}, comp panel_Screen:::p:319:p}, space ::21:x, comp button_signOut:::p::p, space :p:17:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_signOut"
+				"text": "Sign Out"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_signInActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Search"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Icon"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/dare2date_logo.png" )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Search For Love"
+				"font": new java.awt.Font( "Lucida Grande", 0, 28 )
+				"horizontalTextPosition": 0
+				"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+				name: "panel_Screen"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_showProfile2"
+					"text": "Profile"
+					"background": &Color0 new java.awt.Color( 204, 0, 0, 255 )
+					"actionCommand": "Profile"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_showProfileActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Inbox2"
+					"text": "Inbox"
+					"background": #Color0
+					"actionCommand": "Inbox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_InboxActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_InboxActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_InboxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Search2"
+					"text": "Search"
+					"background": #Color0
+					"actionCommand": "Search"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Matches2"
+					"text": "Matches"
+					"background": #Color0
+					"actionCommand": "Matches"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_MatchesActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_MatchesActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_MatchesActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Chat2"
+					"text": "Chat"
+					"background": #Color0
+					"actionCommand": "Chat"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_ChatActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_adv_userInfo2"
+					"text": "My Details"
+					"background": #Color0
+					"actionCommand": "Profile"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_adv_userInfoActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_adv_userInfoActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_adv_userInfoActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_profilePic"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/resources/default_profilepic1.jpg" )
+						"text": "First Last Name"
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_SearchForLove"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button_SearchForLoveActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 700, 500 )
+		} )
+	}
+}

@@ -1,0 +1,170 @@
+/*
+ * Created by JFormDesigner on Fri Mar 14 20:34:59 CET 2014
+ */
+
+package screens;
+
+import java.awt.event.*;
+import java.io.IOException;
+
+import javax.swing.*;
+
+import profile.NonMember;
+import dare2date.Main1;
+
+/**
+ * @author don gourdet
+ */
+public class SignUpScreen extends JPanel {
+	public SignUpScreen() {
+		initComponents();
+	}
+
+	private void button_signInActionPerformed(ActionEvent e) {
+	
+		@SuppressWarnings("deprecation")
+		NonMember nonMember = new NonMember
+				(textField_FirstName.getText(), textField_LastName.getText(),textField_Email.getText(), passwordField_userPassword2.getText());
+		try {
+			nonMember.signUp();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		Main1.gui.getContentPane().removeAll();
+		Main1.gui.getContentPane().add(new StartScreen());
+		Main1.gui.setVisible(true);
+	}
+
+	private void initComponents() {
+		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+		// Generated using JFormDesigner Evaluation license - don gourdet
+		textField_FirstName = new JTextField();
+		passwordField_userPassword1 = new JPasswordField();
+		button_signIn = new JButton();
+		label_Icon = new JLabel();
+		label_FirstName = new JLabel();
+		label_LastName = new JLabel();
+		textField_LastName = new JTextField();
+		label_Email = new JLabel();
+		passwordField_userPassword2 = new JPasswordField();
+		textField_Email = new JTextField();
+		label_CreatePassword = new JLabel();
+		label_ConfirmPassword = new JLabel();
+
+		//======== this ========
+
+		// JFormDesigner evaluation mark
+		setBorder(new javax.swing.border.CompoundBorder(
+			new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+				"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+				javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+				java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+
+		//---- button_signIn ----
+		button_signIn.setText("Sign Up");
+		button_signIn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				button_signInActionPerformed(e);
+				button_signInActionPerformed(e);
+			}
+		});
+
+		//---- label_Icon ----
+		label_Icon.setIcon(new ImageIcon(getClass().getResource("/resources/dare2date_logo.png")));
+		label_Icon.setHorizontalAlignment(SwingConstants.CENTER);
+		label_Icon.setHorizontalTextPosition(SwingConstants.CENTER);
+
+		//---- label_FirstName ----
+		label_FirstName.setText("Frist Name");
+
+		//---- label_LastName ----
+		label_LastName.setText("Last Name");
+
+		//---- label_Email ----
+		label_Email.setText("Email");
+
+		//---- label_CreatePassword ----
+		label_CreatePassword.setText("Create password");
+
+		//---- label_ConfirmPassword ----
+		label_ConfirmPassword.setText("Confirm password");
+
+		GroupLayout layout = new GroupLayout(this);
+		setLayout(layout);
+		layout.setHorizontalGroup(
+			layout.createParallelGroup()
+				.addComponent(label_Icon, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+				.addGroup(layout.createSequentialGroup()
+					.addGroup(layout.createParallelGroup()
+						.addGroup(layout.createSequentialGroup()
+							.addGap(299, 299, 299)
+							.addComponent(button_signIn))
+						.addGroup(layout.createSequentialGroup()
+							.addContainerGap()
+							.addGroup(layout.createParallelGroup()
+								.addComponent(label_FirstName)
+								.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, 216, GroupLayout.PREFERRED_SIZE)
+								.addComponent(label_LastName)
+								.addComponent(textField_LastName, GroupLayout.PREFERRED_SIZE, 216, GroupLayout.PREFERRED_SIZE))))
+					.addGap(0, 309, Short.MAX_VALUE))
+				.addGroup(layout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(layout.createParallelGroup()
+						.addComponent(label_Email)
+						.addComponent(textField_Email, GroupLayout.PREFERRED_SIZE, 216, GroupLayout.PREFERRED_SIZE)
+						.addComponent(label_ConfirmPassword)
+						.addComponent(label_CreatePassword)
+						.addComponent(passwordField_userPassword1, GroupLayout.PREFERRED_SIZE, 216, GroupLayout.PREFERRED_SIZE)
+						.addComponent(passwordField_userPassword2, GroupLayout.PREFERRED_SIZE, 216, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap(464, Short.MAX_VALUE))
+		);
+		layout.setVerticalGroup(
+			layout.createParallelGroup()
+				.addGroup(layout.createSequentialGroup()
+					.addComponent(label_Icon, GroupLayout.PREFERRED_SIZE, 87, GroupLayout.PREFERRED_SIZE)
+					.addGap(51, 51, 51)
+					.addComponent(label_FirstName)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(label_LastName)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(textField_LastName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(label_Email)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(textField_Email, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(label_CreatePassword)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(passwordField_userPassword1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(label_ConfirmPassword)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+					.addComponent(passwordField_userPassword2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+					.addComponent(button_signIn)
+					.addGap(18, 18, 18))
+		);
+		// JFormDesigner - End of component initialization  //GEN-END:initComponents
+	}
+
+	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	// Generated using JFormDesigner Evaluation license - don gourdet
+	private JTextField textField_FirstName;
+	private JPasswordField passwordField_userPassword1;
+	private JButton button_signIn;
+	private JLabel label_Icon;
+	private JLabel label_FirstName;
+	private JLabel label_LastName;
+	private JTextField textField_LastName;
+	private JLabel label_Email;
+	private JPasswordField passwordField_userPassword2;
+	private JTextField textField_Email;
+	private JLabel label_CreatePassword;
+	private JLabel label_ConfirmPassword;
+	// JFormDesigner - End of variables declaration  //GEN-END:variables
+}

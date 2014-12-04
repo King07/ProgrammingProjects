@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="#ffffff"
+    tools:context="com.example.androiddevelopmentproject.PlayerProfileFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/player_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewPlayerRating"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/player_rating"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+    <ImageButton
+        android:contentDescription="@drawable/chess_black"
+        android:id="@+id/btnResultsBlack"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:background="@drawable/chess_black" />
+        <ImageButton
+        android:contentDescription="@drawable/chess_white"
+        android:id="@+id/btnResultsWhite"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:background="@drawable/chess_white"
+        />
+       
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+package dare2date;
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class FormDetails extends JPanel {
+	public FormDetails()
+	{
+		Dimension size = getPreferredSize();
+		size.width = 250;
+		size.height = 250;
+		setPreferredSize(size);
+		setBackground(Color.WHITE);
+		
+		setBorder(BorderFactory.createTitledBorder("Login/ Registration Form"));
+		JLabel emailLable = new JLabel("Email: ");
+		JLabel passwordLable  = new JLabel("Password: ");
+		
+		JTextField emailFeild = new JTextField(18);
+		JTextField passwordFeild = new JTextField(18);
+		JButton loginBtn = new JButton("Login");
+		
+		JButton signupBtn = new JButton("Sign Up");
+		
+		setLayout(new GridBagLayout());
+		GridBagConstraints gc = new GridBagConstraints();
+		
+		//First column
+		gc.anchor = GridBagConstraints.LINE_END;
+		gc.weightx = 0.5;
+		gc.weighty = 0.5;
+		
+		gc.gridx = 0;
+		gc.gridy = 0;
+		add(emailLable,gc);
+		
+		gc.gridx = 0;
+		gc.gridy = 1;
+		add(passwordLable,gc);
+		
+		//Second column
+				gc.anchor = GridBagConstraints.LINE_START;
+		gc.gridx = 1;
+		gc.gridy = 0;
+		add(emailFeild,gc);
+		
+		gc.gridx = 1;
+		gc.gridy = 1;
+		add(passwordFeild,gc);
+		
+		//Third row
+		
+		
+		
+		gc.gridx = 1;
+		gc.gridy = 2;
+		add(loginBtn,gc);
+		
+		//last row
+		gc.weighty = 10;
+		gc.anchor = GridBagConstraints.FIRST_LINE_START;
+		gc.gridx = 1;
+		gc.gridy = 3;
+		add(signupBtn,gc);
+		
+		
+		
+	}
+}

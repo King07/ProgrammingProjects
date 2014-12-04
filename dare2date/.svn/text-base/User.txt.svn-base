@@ -1,0 +1,24 @@
+0  email
+1  password
+2  firstname
+3  lastname
+4  creditnumber
+5  creditcardexpdate
+6  ***AdvanceData***
+7  DateOfbirth
+8  gender
+9  city
+10 country
+11 phoneNumber
+12 preferences,preferences,preferences
+13 hobbies,hobbies,hobbies
+14 partnerExpectations
+15 #%has payed%#=true
+
+1: To fill in advance information 
+2: To show profile
+3: Search for users
+4: Inbox
+5: Log off 
+6: Show Matches1
+

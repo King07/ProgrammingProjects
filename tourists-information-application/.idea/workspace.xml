@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" name="Default" comment="" />
+    <ignored path="tourists-information-application.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/layout.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398419148983" ignored="false" />
+    <file path="/index.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397240029890" ignored="false" />
+    <file path="/main.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389182622852" ignored="false" />
+    <file path="/2013_12_16_151651_create_users_table.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387211415217" ignored="false" />
+    <file path="/2013_12_16_151753_create_attractions_table.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387209986985" ignored="false" />
+    <file path="/2013_12_16_151814_create_employees_table.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387209913373" ignored="false" />
+    <file path="/2013_12_16_151832_create_reviews_table.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387210268587" ignored="false" />
+    <file path="/2013_12_16_151932_create_attraction_category_table.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387210868451" ignored="false" />
+    <file path="$PROJECT_DIR$/app/storage/logs/laravel.log" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387214004147" ignored="false" />
+    <file path="/routes.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398460701536" ignored="false" />
+    <file path="/UserController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389802422908" ignored="false" />
+    <file path="/hello.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397238396098" ignored="false" />
+    <file path="/login.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389699370744" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/routes.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389875418021" ignored="false" />
+    <file path="/register.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389697761601" ignored="false" />
+    <file path="/User.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389702378446" ignored="false" />
+    <file path="/Attraction.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389356717805" ignored="false" />
+    <file path="/AttractionController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388658870280" ignored="false" />
+    <file path="/attractions.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387451421268" ignored="false" />
+    <file path="/categories.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387458639058" ignored="false" />
+    <file path="/CategoryController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387459992906" ignored="false" />
+    <file path="/reviews.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387460934606" ignored="false" />
+    <file path="/ReviewController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387463190421" ignored="false" />
+    <file path="/Review.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389625660910" ignored="false" />
+    <file path="/Category.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389364638806" ignored="false" />
+    <file path="$PROJECT_DIR$/../site/update/attractionInfo.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387464343869" ignored="false" />
+    <file path="/details.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388668327526" ignored="false" />
+    <file path="/AttractionsCategory.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389355726657" ignored="false" />
+    <file path="/myscript.js" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387467359301" ignored="false" />
+    <file path="/test.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1387547485588" ignored="false" />
+    <file path="/AdminController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1391174152532" ignored="false" />
+    <file path="/index.html" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388667072673" ignored="false" />
+    <file path="/layout.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388764985142" ignored="false" />
+    <file path="/dashboard.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389370894877" ignored="false" />
+    <file path="/Employee.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389620510866" ignored="false" />
+    <file path="/filters.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388682310454" ignored="false" />
+    <file path="/admin.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388742689041" ignored="false" />
+    <file path="/add_attraction.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1391178054890" ignored="false" />
+    <file path="/modify_attraction.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389365951507" ignored="false" />
+    <file path="/modify_categories.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389365912760" ignored="false" />
+    <file path="/bootstrap.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388757208121" ignored="false" />
+    <file path="/modify_reviews.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1391184449352" ignored="false" />
+    <file path="$PROJECT_DIR$/app/storage/views/5d90548ea6f55f93965509672dcaacde" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1388764937262" ignored="false" />
+    <file path="/view_users.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389615910484" ignored="false" />
+    <file path="/add_employee.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389621351646" ignored="false" />
+    <file path="/user_profile.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389623307182" ignored="false" />
+    <file path="/modify-attraction-edit.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1391180235768" ignored="false" />
+    <file path="/BaseController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389275050553" ignored="false" />
+    <file path="/a.dummy" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398459565974" ignored="false" />
+    <file path="/remind.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389868088214" ignored="false" />
+    <file path="/reset.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389706303488" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/config/database.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389875479314" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/public/index.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389716968225" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/views/login.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389875510745" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/bootstrap/css/importer.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389868667794" ignored="false" />
+    <file path="/importer.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1389868658687" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/models/jobs/seoshop/SeoshopJobs.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1390831861821" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/models/products.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1390831705646" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/models/category.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1390831861821" ignored="false" />
+    <file path="$PROJECT_DIR$/../seoshop/importer/app/commands/JobsCommand.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1390832201276" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/hello.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397238465115" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/layout/index.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397240034787" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/routes.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398460708413" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/layout/layout.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398419148983" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/bootstrap/bootstrap.min.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397242587745" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/bootstrap/carbitstyle.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398420655242" ignored="false" />
+    <file path="/carbitstyle.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398418117155" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/bootstrap/carousel.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397241521965" ignored="false" />
+    <file path="/carousel.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397241505724" ignored="false" />
+    <file path="/bootstrap.min.css" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1397242334889" ignored="false" />
+    <file path="/building.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398418805820" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/services/building.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398419061087" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/services/consulting.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398202520391" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/services/maintenance.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398210610998" ignored="false" />
+    <file path="/maintenance.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398210608699" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/controllers/HomeController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398506808377" ignored="false" />
+    <file path="/HomeController.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398506790295" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/composer.json" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398374433219" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/views/contact.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398524514702" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/PHPMailer.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398459378751" ignored="false" />
+    <file path="$PROJECT_DIR$/../your-project/app/PHPMailerAutoload.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398459788588" ignored="false" />
+    <file path="/contact.blade.php" changelist="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" time="1398524426588" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tourists-information-application" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="modify-attraction-edit.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/modify-attraction-edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="14" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modify_attraction.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/modify_attraction.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1389365953569" expanded="true" signature="85:2064" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="264:476" placeholder="..." />
+                <marker date="1389365953569" expanded="false" signature="387:423" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="596:806" placeholder="..." />
+                <marker date="1389365953569" expanded="false" signature="719:755" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="868:2022" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="906:1991" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="966:1982" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="978:1088" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="987:1075" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1100:1970" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1151:1941" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1250:1490" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1337:1479" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1395:1467" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1500:1931" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1585:1919" placeholder="..." />
+                <marker date="1389365953569" expanded="true" signature="1831:1904" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modify_categories.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/modify_categories.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1457" selection-end="2120" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="394" selection-end="444" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="4" selection-start="213" selection-end="284" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="42" selection-start="1750" selection-end="1763" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_attraction.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/add_attraction.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="58" selection-start="1754" selection-end="1754" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="0" selection-start="2151" selection-end="2342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="370" column="79" selection-start="13889" selection-end="13889" vertical-scroll-proportion="-17.384615">
+              <folding>
+                <marker date="1391174216106" expanded="true" signature="12955:13144" placeholder="..." />
+                <marker date="1391174216106" expanded="true" signature="12972:13127" placeholder="..." />
+                <marker date="1391174216106" expanded="true" signature="12986:13109" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modify_reviews.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/modify_reviews.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3200796">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/views/user/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/views/emails/auth/reminder.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/password/reset.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/views/password/remind.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/add_attraction.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/modify-attraction-edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/modify_reviews.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/home/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layout/layout.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="categories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists-information-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views\password" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views\user" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views\admin" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\bootstrap\js" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\images\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views\password" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views\user" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\views" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\database\migrations" />
+      <recent name="C:\xampp\htdocs\tourists-information-application\app\database\migra" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84a4f9ba-2173-4bea-bdbf-d68ab2a30f9d" name="Default" comment="" />
+      <created>1387190562403</created>
+      <updated>1387190562403</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2219697" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="25" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/add_employee.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="47" selection-start="2215" selection-end="2215" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/modify-attraction-edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="14" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/add_attraction.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="58" selection-start="1754" selection-end="1754" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="42" selection-start="1750" selection-end="1763" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/modify_categories.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1457" selection-end="2120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="213" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/modify_attraction.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1389365953569" expanded="true" signature="85:2064" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="264:476" placeholder="..." />
+            <marker date="1389365953569" expanded="false" signature="387:423" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="596:806" placeholder="..." />
+            <marker date="1389365953569" expanded="false" signature="719:755" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="868:2022" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="906:1991" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="966:1982" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="978:1088" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="987:1075" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1100:1970" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1151:1941" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1250:1490" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1337:1479" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1395:1467" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1500:1931" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1585:1919" placeholder="..." />
+            <marker date="1389365953569" expanded="true" signature="1831:1904" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="0" selection-start="2151" selection-end="2342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="8" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.3488372" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="394" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="370" column="79" selection-start="13889" selection-end="13889" vertical-scroll-proportion="-17.384615">
+          <folding>
+            <marker date="1391174216106" expanded="true" signature="12955:13144" placeholder="..." />
+            <marker date="1391174216106" expanded="true" signature="12972:13127" placeholder="..." />
+            <marker date="1391174216106" expanded="true" signature="12986:13109" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/modify_reviews.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3200796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

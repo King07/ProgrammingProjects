@@ -1,0 +1,56 @@
+package profile;
+
+import java.util.ArrayList;
+
+public class Messages 
+{	
+	User sender;
+	User receiver;
+	ArrayList<String> newMessage = new ArrayList<>();
+	ArrayList<String> inbox = new ArrayList<>();
+	ArrayList<String> outbox = new ArrayList<>();
+	ArrayList<String> draft = new ArrayList<>();
+	
+	public Messages(String sender, String newMessage){
+		
+	}
+	
+	
+	public User getSender() {
+		return sender;
+	}
+	public void setSender(User sender) {
+		this.sender = sender;
+	}
+	public User getReceiver() {
+		return receiver;
+	}
+	public void setReceiver(User receiver) {
+		this.receiver = receiver;
+	}
+	public ArrayList<String> getNewMessage() {
+		return newMessage;
+	}
+	public void setNewMessage(ArrayList<String> newMessage) {
+		this.newMessage = newMessage;
+	}
+	public ArrayList<String> getInbox() {
+		return inbox;
+	}
+	public void setInbox(ArrayList<String> inbox) {
+		this.inbox = inbox;
+	}
+	public ArrayList<String> getOutbox() {
+		return outbox;
+	}
+	public void setOutbox(ArrayList<String> outbox) {
+		this.outbox = outbox;
+	}
+	public ArrayList<String> getDraft() {
+		return draft;
+	}
+	public void setDraft(ArrayList<String> draft) {
+		this.draft = draft;
+	}
+	
+}

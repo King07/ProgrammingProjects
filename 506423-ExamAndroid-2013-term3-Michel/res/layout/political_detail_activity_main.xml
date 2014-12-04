@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background_travel"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textPolicalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconImage"
+        android:layout_marginLeft="40dp"
+        
+        android:layout_toRightOf="@+id/iconImage"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/cda" />
+
+    <ScrollView
+        android:id="@+id/scrollViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iconImage"
+        android:layout_below="@+id/textPolicalName"
+        android:layout_marginTop="24dp" >
+
+        <TextView
+            android:id="@+id/textPolicalDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingRight="20dp"
+            android:text="Description" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listViewPromises"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/scrollViewDescription"
+        android:layout_below="@+id/scrollViewDescription"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Promises" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/TextViewPolitical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textPolicalName"
+        android:layout_alignLeft="@+id/textPolicalName"
+         android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAddPromises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listViewPromises"
+        android:layout_below="@+id/scrollViewDescription"
+        android:layout_marginTop="22dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="Promises" />
+
+</RelativeLayout>
